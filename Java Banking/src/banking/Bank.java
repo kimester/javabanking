@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Bank {
 
 	public static void main(String[] args) {
-		//creates new instand of Bank class
+		//creates new instead of Bank class
 		Bank bank = new Bank();
 		
 		//calls the run method in the bank class
@@ -52,7 +52,61 @@ public void run() {
 	System.out.println();
 	System.out.println("Customer info:" );
 	System.out.println(checkingAccount.getCustomerInfo());
-			
+	
+	//get and print account info for checking account
+	System.out.println("Checking account: ");
+	System.out.println(checkingAccount.getAccountInfo());
+	
+	//get and print account info for checking account
+	System.out.println("Savings account: ");
+	System.out.println(savingsAccount.getAccountInfo());
+	
+	//deposits
+	
+	// into checking 
+	System.out.println();
+	System.out.println ("Amount (decimal)to deposit into your checking account?");
+	double amount = scanner.nextDouble();	//get next to token(double)
+	checkingAccount.deposit(amount); //deposit into checking account
+	
+	// into savings
+	System.out.println();
+	System.out.println ("Amount (decimal)to deposit into your savings account?");
+    amount = scanner.nextDouble();	//get next to token(double)
+	savingsAccount.deposit(amount);//deposit into savings account
+	
+	System.out.println(checkingAccount.getAccountInfo());
+	System.out.println(savingsAccount.getAccountInfo());
+	
+	//withdrawals
+	
+	//from checking
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

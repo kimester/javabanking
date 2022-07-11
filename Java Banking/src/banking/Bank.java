@@ -75,42 +75,44 @@ public void run() {
     amount = scanner.nextDouble();	//get next to token(double)
 	savingsAccount.deposit(amount);//deposit into savings account
 	
+	//print new balances
 	System.out.println(checkingAccount.getAccountInfo());
 	System.out.println(savingsAccount.getAccountInfo());
 	
 	//withdrawals
 	
 	//from checking
+	System.out.println(); 
+	System.out.println ("Amount (decimal)to withdraw into your checking account?");
+	amount = scanner.nextDouble();//get next token (double
 	
+	try {
+		checkingAccount.withdraw(amount);// withdraw from checking
+	} catch (Exception e) {
+		//print custom error message from withdraw method
+		//e.printStackTrace();
+		
+		System.out.println(e.getMessage());
+	} 
 	
+	//from savings
+	System.out.println(); 
+	System.out.println ("Amount (decimal)to withdraw into your saving account?");
+	amount = scanner.nextDouble();//get next token (double
 	
+	try {
+		savingsAccount.withdraw(amount);// withdraw from savings
+	} catch (Exception e) {
+		
+		//e.printStackTrace();
+		//print custom error message from withdraw method
+		System.out.println(e.getMessage());
+	} 
+	//print new balances
+	System.out.println(checkingAccount.getAccountInfo());
+	System.out.println(savingsAccount.getAccountInfo());
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	scanner.close();
 	
 }
 }

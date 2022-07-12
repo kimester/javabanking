@@ -1,5 +1,5 @@
-# javabanking
-Simple Java banking system 
+# Javabanking
+Simple banking system using Java 
 
 # Features 
 - Create bank account providing name and address
